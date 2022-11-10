@@ -34,6 +34,7 @@ pub mod TGA {
     }
 
     impl TGAFile {
+        // Serializer, converts a TGAFile into a u8 byte array
         pub fn cereal(&self) -> Vec<u8> {
             //TODO: make this less gross, verbose for testing reasons
             let mut output: Vec<u8> = Vec::new();
